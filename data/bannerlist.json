@@ -1,0 +1,27 @@
+{
+   "banners":[
+     {
+       "link":"http://localhost/hx/a.html",
+       "src":"http://localhost/angularpro/static/image/banner.png"
+     }
+     ],
+   "hxinfo" : [
+       {
+         "src" : "http://localhost/angularpro/static/image/MainBtn1.png ",
+         "title":"收益率高",
+         "content":"多种投资综合"
+       },
+       {
+         "src" : "http://localhost/angularpro/static/image/MainBtn1.png ",
+         "title":"收益率高",
+         "content":"多种投资综合"
+       },
+       {
+         "src" : "http://localhost/angularpro/static/image/MainBtn1.png ",
+         "title":"收益率高",
+         "content":"多种投资综合"
+       }
+   ],
+    "state":10080
+
+}

@@ -1,0 +1,29 @@
+
+<div class="overline" ng-show="conf.isshow">
+    <div class="over_bg">
+
+    </div>
+    <div class="overline dialog">
+
+        <div class="overline flo dialog_title" >
+
+            {{ conf.title }}
+
+        </div>
+        <div class="overline flo dialog_content" >
+
+            {{ conf.content }}
+
+        </div>
+
+        <div class="overline flo " style="border-top: #d3d3d3 solid 1px;">
+            <ul class="list overline dialog_btns">
+                <li ng-click="conf.confirm()">确认</li>
+                <li ng-click="conf.cancel()">取消</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</div>

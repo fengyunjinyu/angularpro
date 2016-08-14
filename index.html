@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="hxapp" ng-controller="LayoutCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <title>Angular项目开发</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="static/css/component.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <ui-view></ui-view>
+    <!--  记载angular开发需要模块  -->
+<script src="dist/angular.js"></script>
+<script src="dist/angular-route.js"></script>
+<script src="dist/angular-resource.js"></script>
+<script src="dist/angular-animate.js"></script>
+<script src="dist/angular-cookies.js"></script>
+<script src="dist/angular-ui-router.js"></script>
+
+<!-- 加载core模块 -->
+<script src="modules/core/app.core.js"></script>
+<script src="modules/core/services/core.service.js"></script>
+<script src="modules/core/services/auth.services.js"></script>
+<script src="modules/core/controller/main.ctrl.js"></script>
+<script src="modules/core/controller/home.ctrl.js"></script>
+<script src="modules/core/controller/router.ctrl.js"></script>
+<script src="modules/core/controller/layout.ctrl.js"></script>
+<script src="modules/core/directives/myDirectives.js"></script>
+    <script src="modules/core/directives/common.directive.js"></script>
+<script src="modules/core/config/core.route.js"></script>
+
+    <script src="server/server.js"></script>
+
+    <!--  加载我要投资模块 -->
+
+    <script src="modules/invest/app.invest.js"></script>
+    <script src="modules/invest/config/invest.route.js"></script>
+    <script src="modules/invest/services/invest.service.js"></script>
+
+<!-- 加载登录注册等模块 -->
+    <script src="modules/users/app.users.js"></script>
+    <script src="modules/users/users.route.js"></script>
+    <script src="modules/users/controller/login.controller.js"></script>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

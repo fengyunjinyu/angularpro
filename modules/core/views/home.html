@@ -1,0 +1,47 @@
+<div class="overline flo" style="min-height: 100px;background: #d3d3d4">
+    <ul class="list flo list_banner">
+        <li ng-repeat="item in banners" class="list">
+            <a href="{{item.link}}">
+                <img src="{{item.src }}">
+
+            </a>
+
+        </li>
+    </ul>
+
+</div>
+
+<div class="overline flo">
+    <ul class="overline list pad_tb_15 list_flex hxinfo" style="display: flex">
+        <li ng-repeat="items in hxinfo">
+            <img src="{{ items.src }}">
+            <div class="overline desc">
+                <p>{{ items.title }}</p>
+                <p>{{ items.content }}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="overline flo pad_lr_15 pad_tb_15">
+    <a class="btn_normal" ui-sref="app.invest.list"> 立即投资 </a>
+</div>
+
+
+
+<!--
+
+<div ng-init="myProperty='wow this is very cool'">
+    surround: {{ myProperty }}<br>
+    <div my-directive formname="{{myProperty}}"></div>
+
+    <hr>
+    <div my-inherit-scope-directive></div>
+</div>
+
+-->
+
+
+    <div dialog conf="dialog_info">
+
+    </div>

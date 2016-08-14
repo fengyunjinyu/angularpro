@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <title>Angular项目开发</title>
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/component.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        h1,h2,h3,h4,h5,b{font-weight: normal;font-style: normal}
+        .text_center{text-align: center}
+
+        .pwd_title{ width: 100%; font-size: 1rem;color: #585858;padding: 1rem 0 }
+
+        .input_line{ display: inline-block;line-height: 20px;letter-spacing: 10px;
+            border: #848484 solid 1px;
+            color:#585858;
+            font-size: 16px;padding: 10px 15px;text-align: center; border-radius: 10px;}
+
+
+        .mag_t_15{margin-top: 15px;}
+
+
+        /* 投资中金额输入框 活期理财与定期理财 模块  */
+        .mod_m_input{ background: #fff;border-radius: 0.275rem; border: 1px solid #ededed;
+            padding: 0.5rem 4rem; overflow: hidden ; width: 100%; position: relative}
+
+        .mod_m_input .money_input{ display: inline-block; width: 100%;border: none; padding: 6px 0;
+            font-size: 25px;color: #585858; line-height: 30px; }
+        .mod_m_input  .btns{position: absolute; width: 50px; height: 38px;top: 10px; text-align: center}
+        .mod_m_input  .btn_plus{right: 0px; border-left:#f4f4f4 solid 1px;
+            background:url("../static/image/plus.png") no-repeat;
+            background-size: 20px auto; background-position: 13px 9px;
+        }
+        .mod_m_input  .btn_reduce{left: 0px;border-right:#f4f4f4 solid 1px;
+            background:url("../static/image/jian@3x.png") no-repeat;
+            background-size: 16px auto; background-position: 17px 18px;}
+        .dialog_btns li{line-height: 45px;font-size: 16px;}
+
+
+
+
+
+
+    </style>
+</head>
+<body style="background: #f5f6f5">
+
+<!-- 密码输入框组件 -->
+
+<div class="overline flo bg_fff pad_tb_15 pad_lr_15" style="padding-bottom: 4rem">
+
+    <h3 class="overline flo text_center pwd_title">请输入交易密码 </h3>
+    <div class="text_centerr" style=" padding: 0 2rem">
+        <input type="password" name="pwdname" class="input_line" maxlength="6">
+        <p style="text-align: right;font-size: 0.75rem;padding-top: 0.75rem">
+            <a href="#" style="color:#037AFF"> 忘记密码 </a>
+        </p>
+    </div>
+</div>
+
+<!--  金额输入框 -->
+
+<div class="overline flo mag_t_15 bg_fff pad_lr_15 pad_tb_15">
+    <div class="overline flo mod_m_input">
+        <b class="btns btn_reduce"> </b>
+        <b class="btns btn_plus"></b>
+        <input type="text" name="" class="money_input">
+    </div>
+</div>
+
+<!-- 投资列表组件 -->
+
+
+
+<!-- 弹出框组件  -->
+<div class="overline flo pad_lr_15 pad_tb_15">
+
+    <div class="bg_fff" style="width: 270px;text-align: center;border-radius: 14px;">
+        <h1 class="overline flo text_center pad_tb_15 " style="font-size: 18px;">标题</h1>
+        <div class="overline flo pad_lr_15 " style="padding-bottom: 15px;">
+            Hello world
+
+        </div>
+        <ul class="list_flex list overline dialog_btns" style="border-top: #d1d1d1 solid 1px">
+            <li>确定</li>
+            <li>取消</li>
+        </ul>
+    </div>
+
+</div>
+
+
+</body>
+</html>
