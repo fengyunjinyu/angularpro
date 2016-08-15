@@ -39,7 +39,7 @@
                 templateUrl:'modules/core/views/elements/inputmoney.html',
                 scope:{
                     conf:'=' ,  //项目配置信息
-                    state:''    //状态通道  ， 将用户当前输入金额之后的响应状态反射到页面上
+                    state:'='    //状态通道  ， 将用户当前输入金额之后的响应状态反射到页面上
                 },
                 link:function(scope , element , attrs){
 

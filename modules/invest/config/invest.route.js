@@ -17,6 +17,7 @@
                 templateUrl:"modules/invest/views/invest_list.html",
                 controllerAs:'investlist',
                 controller:function(){
+                    this.active =1;
                     this.debtinfo = {
                         elem:'jojox',
                         size:'59',
@@ -24,12 +25,12 @@
                     };
                     this.handler = new drawCircle(this.debtinfo);
 
-                    this.reDraw = function(size){
+                    this.reDraw = function(active,size){
+                        this.active = active;
                         this.handler.clearDraw();
                         this.handler.drawCircle();
                         this.handler.drawPathSize(size);
                     }
-
                     this.handler.drawCircle();
                     this.handler.drawPath();
 
@@ -41,6 +42,7 @@
                 templateUrl:'modules/invest/views/invest_now.html',
                 controllerAs:"investnow",
                 controller:function(){
+
                     this.debtinfo = {
                         minmoney:100, //最低投资额
                         maxmoney:15000,//最高投资额

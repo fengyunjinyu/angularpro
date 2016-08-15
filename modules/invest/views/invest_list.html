@@ -5,10 +5,10 @@
 <!-- 可投资债权 -->
 <div class="overline flo bg_fff">
     <ul class="list list_flex debt_list">
-        <li ng-click="investlist.reDraw(30)">债权1</li>
-        <li ng-click="investlist.reDraw(100)">债权2</li>
-        <li class="cur" ng-click="investlist.reDraw(59)" >债权3</li>
-        <li ng-click="investlist.reDraw(75)">债权4</li>
+        <li ng-class="1!=investlist.active?'a':'cur' " ng-click="investlist.reDraw(1,30)">债权1</li>
+        <li ng-class="2!=investlist.active?'a':'cur' " ng-click="investlist.reDraw(2,100)">债权2</li>
+        <li ng-class="3!=investlist.active?'a':'cur' " ng-click="investlist.reDraw(3,59)" >债权3</li>
+        <li ng-class="4!=investlist.active?'a':'cur' " ng-click="investlist.reDraw(4,75)">债权4</li>
     </ul>
 </div>
 
