@@ -39,3 +39,9 @@ angular实现sessionToken拦截
 拦截 分两种
 一种请求拦截 ：  请求之前验证用户token是否失效，如果token不存在， 重新登录
 二中响应拦截     如果用户使用失效的token请求服务器， 返回的结果是失效的请求， 这个时候要跳转到登录页重新执行登录
+
+
+
+angular 调用raphael 实现绘制svg 圆形
+
+angular 以作用域管理变量 ， 在作用域内 使用dom操作创建

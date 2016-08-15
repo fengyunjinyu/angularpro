@@ -5,10 +5,10 @@
 <!-- 可投资债权 -->
 <div class="overline flo bg_fff">
     <ul class="list list_flex debt_list">
-        <li>债权1</li>
-        <li>债权2</li>
-        <li class="cur">债权3</li>
-        <li>债权4</li>
+        <li ng-click="investlist.reDraw(30)">债权1</li>
+        <li ng-click="investlist.reDraw(100)">债权2</li>
+        <li class="cur" ng-click="investlist.reDraw(59)" >债权3</li>
+        <li ng-click="investlist.reDraw(75)">债权4</li>
     </ul>
 </div>
 
@@ -19,14 +19,17 @@
         <a ui-sref="app.invest.debtinfo">
             <h1 >海象X计划 第**期</h1>
             <p>08月13日 09:30发售</p>
-
         </a>
 
 
     </div>
 
-    <div class="overline flo" style="height:100px;text-align: center">
-        预计年化收益率 <br>9.0%
+    <div class="overline flo" style="height:130px;text-align: center" id="jojox">
+
+        <div class="pos_ab overline " style="left:0;top:40px;text-align: center;font-size: 14px;">
+            预计年化收益率 <p style="font-size: 20px;color: #ff4657">9.0%</p>
+        </div>
+
     </div>
 
     <div class="debt_more_info pad_lr_15 flo overline" style="text-align: center">

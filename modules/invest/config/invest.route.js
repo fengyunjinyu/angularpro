@@ -14,7 +14,27 @@
 
             }).state("app.invest.list" , {
                 url:'/list',
-                templateUrl:"modules/invest/views/invest_list.html"
+                templateUrl:"modules/invest/views/invest_list.html",
+                controllerAs:'investlist',
+                controller:function(){
+                    this.debtinfo = {
+                        elem:'jojox',
+                        size:'59',
+                        color:'#ff4657'
+                    };
+                    this.handler = new drawCircle(this.debtinfo);
+
+                    this.reDraw = function(size){
+                        this.handler.clearDraw();
+                        this.handler.drawCircle();
+                        this.handler.drawPathSize(size);
+                    }
+
+                    this.handler.drawCircle();
+                    this.handler.drawPath();
+
+
+                }
             }).state("app.invest.debtnow" ,{
                 //立即投资
                 url:'/invest/debt/:id',
