@@ -7,7 +7,6 @@
         var m = url.match(/^(?:https?:)?\/\/([^\/]+)/);
         return m ? m[1] : null;
     }
-
     var urlBaseHost = getHost(urlBase) || location.host;
 
     var module = angular.module('lbServices' , ['ngResource']);
@@ -56,6 +55,24 @@
             R.moduleName = "Users";
             return R;
     }]);
+
+    module.factory("Account" , ['LoopBackResource' , '$injector',
+        function(Resource , $injector){
+            var R = Resource(
+                urlBase+"data/invest/:id" ,
+                {id:'@id'},
+                {
+                    'getdetails':{
+                        //isArray:true,
+                        url:urlBase+"data/account_details.json",
+                        method:'get'
+                    }
+                }
+            );
+            R.moduleName = "Account";
+            return R;
+        }
+    ]);
 
 
         module.provider("LoopBackResource" , function LoopBackResourceprovider(){

@@ -1,0 +1,20 @@
+{
+  "account_money" : 12000,
+  "banklist" :[
+     {
+         "bankname" : "工商银行" ,
+         "bankcard" :"6212260200031255322"
+     },
+    {
+      "bankname" : "农业银行" ,
+      "bankcard" :"6212260200031255322"
+    },
+    {
+      "bankname" : "交通银行" ,
+      "bankcard" :"6212260200031255322"
+    }
+  ],
+  "hasbank":true,
+  "status":10000
+
+}
