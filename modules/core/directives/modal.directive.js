@@ -6,9 +6,7 @@
                 restrict :'AE',
                 templateUrl: 'modules/core/views/modal.html',
                 scope:{
-                    color:'@',
-                    title:'@',
-                    items:'='
+                    conf:'='
                 },
                 link: function(scope , elements , attrs){
 

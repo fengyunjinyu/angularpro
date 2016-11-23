@@ -57,19 +57,15 @@
 
                      }
                      */
-
-
                     scope.inputmoney = "0.00";
 
                     //点击增减金额
                     scope.plusmoney=function(){
-
                         scope.inputmoney = parseInt(scope.inputmoney)+100;
                         //如果金额小于最小金额
                         conf.inputmoney = conf.inputmoney <conf.minmoney ? conf.minmoney : conf.inputmoney;
                         //如果金额大于该项目投资总额
                         conf.inputmoney = conf.inputmoney > conf.maxmoney ? conf.maxmoney : conf.inputmoney;
-
                         //如果输入金额大于账户总金额
 
                     };
@@ -79,32 +75,35 @@
                         scope.inputmoney = scope.inputmoney>0?scope.inputmoney:0;
 
                     };
-
-
-
                 }
             }
         })
-        .directive("dialog",function(){
+        .directive("uiDialog",function(){
             return {
-                restrict:'EA',
+                restrict:'AE',
                 replace:true,
                 templateUrl:'modules/core/views/elements/dialog.html',
                 scope:{
                     conf:'='
                 },
                 link:function(scope , element , attrs){
+                }
+            }
+        })
+        .directive('uiAlert' , function(){
+            return {
+                restrict :'AE',
+                templateUrl: 'modules/core/views/elements/modal.html',
+                scope:{
+                    conf:'='
+                },
+                link: function(scope , element , attrs){
 
-                    scope.cancel = function(){
-                        console.log("cancel");
-                    };
-                    scope.confirm = function(){
-                        console.log("confirm");
-                    }
+                },
+                compile:function(){
 
                 }
-
             }
-
-        });
+        })
+    ;
 })();

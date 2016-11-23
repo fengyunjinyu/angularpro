@@ -8,31 +8,42 @@
         .controller('HomeCtrl' , function($scope , $rootScope ,bannerlist){
 
             $scope.title = "APP-Home";
-            console.log('jjjs');
             console.log(bannerlist);
 
             $scope.banners = bannerlist.banners;
 
             $scope.hxinfo = bannerlist.hxinfo;
 
-            $scope.dialog_info={
-                isshow:false,
-                title:'提示',
-                content:'你的账户有问题',
-                confirm:function(){
-                    this.content="Confirm";
+            $scope.show_modal=function(){
 
-                },
-                cancel:function(){
-                    this.isshow = false;
+                $scope.$emit('show_modal', {
+                    "title":"invest_index_notice_emit_parent",
+                    "content":"Modal测试",
+                    "show":true,
+                    "clickevent":function(){
+                        this.show = false;
+                    }
+                });
 
-                },
-                updateTitle:function(str_title){
-                    this.title = str_title;
-                },
-                updateContent:function(str_content){
-                    this.content = str_content;
-                }
+            }
+
+            //$scope.$emit("hide_ftmenu");
+
+            $scope.show_dialog = function(){
+
+                $scope.$emit('show_dialog', {
+                    "title":"Dialog测试",
+                    "content":"独立弹出框测试",
+                    "show":true,
+                    "cancel_event":function(){
+                        console.log("cancel");
+                        this.show = false;
+                    },
+                    "confirm_event":function(){
+                        console.log("select confirm")
+                        this.show = false;
+                    }
+                });
 
             }
 

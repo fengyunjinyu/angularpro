@@ -34,7 +34,8 @@
 <script src="modules/core/controller/router.ctrl.js"></script>
 <script src="modules/core/controller/layout.ctrl.js"></script>
 <script src="modules/core/directives/myDirectives.js"></script>
-<script src="modules/core/directives/common.directive.js"></script>
+    <script src="modules/core/directives/common.directive.js"></script>
+    <script src="modules/core/directives/modal.directive.js"></script>
 <script src="modules/core/config/core.route.js"></script>
 
 

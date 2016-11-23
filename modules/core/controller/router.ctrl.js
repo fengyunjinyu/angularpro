@@ -28,7 +28,6 @@
 
             $rootScope.$on('userIntercepted' , function(errorType){
                 var statename = $state.current.name;
-
                 console.log("jjss");
                 //$state.go("login" , {from:$state.current.name,w:errorType});
             });
