@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="hxapp" ng-controller="LayoutCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <title>Angular项目(PC端)</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="static/css/pc.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+        *{font-family: "Microsoft Yahei"}
+
+    </style>
+
+</head>
+<body>
+<ui-view></ui-view>
+<!--  载angular开发需要模块  -->
+<script src="dist/angular.js"></script>
+<script src="dist/angular-route.js"></script>
+<script src="dist/angular-resource.js"></script>
+<script src="dist/angular-animate.js"></script>
+<script src="dist/angular-cookies.js"></script>
+<script src="dist/angular-ui-router.js"></script>
+
+
+<!-- 加载用户中心模块 -->
+<script src="mods/user/app.user.js"></script>
+<script src="mods/user/services/appauth.service.js"></script>
+<script src="mods/user/controllers/login.ctrl.js"></script>
+
+<!-- 加载core模块 -->
+<script src="mods/core/app.core.js"></script>
+<script src="mods/core/config/core.route.js"></script>
+<script src="mods/core/controllers/router.ctrl.js"></script>
+
+
+
+<script src="server/server.js"></script>
+
+
+
+<script src="mods.js"></script>
+
+</body>
+</html>

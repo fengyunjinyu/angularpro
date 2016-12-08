@@ -1,0 +1,44 @@
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-style: normal;}
+h1{font-size: 20px;}
+.navs{display: inline-block;line-height: 30px;
+    padding: 10px 0;color: #d4d4d4}
+.navs a{display: inline-block;line-height: 30px;padding:0 15px;
+    color: #848484;font-size: 14px;}
+
+.web_logo{display: block;line-height: 50px;}
+.pad_tb_10{padding-top: 10px;padding-bottom: 10px;}
+
+.foot_line{line-height: 20px;font-size: 14px;
+    color: #848484;text-align: right}
+
+
+.left_slide{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding: 70px 0 40px 0;
+    border-right: #d1d1d1 solid 1px;
+}
+
+.slide-menus{
+
+}
+.slide-menus li{
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: #d1d1d1 solid 1px;;
+}
+
+
+.form_input{display: inline-block;line-height: 40px;  border: #d1d1d1 solid 1px;}
+
+.form-block{padding: 0 20px;border: #d1d1d1 solid 1px;background: #fff;
+    width: 300px;box-shadow: #848484 0 0 2px;}
+.form-block-title{text-align: center;padding: 10px 0;}
+.form-content{}
+.form-content .form-content-line{padding-bottom: 15px;}
+.form_input{display: inline-block;line-height: 30px;
+    border: #d1d1d1 solid 1px;width: 100%;padding-left: 10px;}
+
+.btn{border: none}
+.btn_normal{}

@@ -9,7 +9,7 @@
                 $state.go('login');
             };
 
-            $scope.ftmenu = false;
+            $scope.ftmenu = true;
 
             $scope.modal_info={
                 "title":'提示',
@@ -17,7 +17,6 @@
                 "show":false,
                 'click_event':function(){
                     alert("按钮点击默认事件");
-
                 }
             }
             $scope.dialog_info={

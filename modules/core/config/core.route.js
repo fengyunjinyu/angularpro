@@ -9,7 +9,8 @@
             $stateProvider
                 .state('router' ,{
                     url:'/router',
-                    template:'<div class="loopback">Router Error</div>'
+                    template:'<div class="loopback">Router Error</div>',
+                    controller:'RouteCtrl'
                 })
                 .state("error" , {
                     url:'/error',
@@ -33,7 +34,7 @@
                         }
                     }
                 });
-            $urlRouterProvider.otherwise('/login');
+            $urlRouterProvider.otherwise('/route');
         })
         .factory('httpInterceptor' , ['$q' , "$injector" , function($q , $injector){
             var httpInterceptor = {

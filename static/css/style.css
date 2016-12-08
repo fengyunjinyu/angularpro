@@ -48,10 +48,4 @@ body{background: #f5f6f5}
     background: #ff4657;display: inline-block;border-radius: 5px;}
 
 
-.hxinfo {}
-.hxinfo li{text-align: center}
-.hxinfo li img{display: inline-block;width: 40px;height: 40px;}
-.hxinfo li .desc{ text-align: center}
-.hxinfo li .desc p{line-height: 16px; font-size: 12px;}
-
 
